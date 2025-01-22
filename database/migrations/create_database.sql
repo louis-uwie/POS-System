@@ -28,9 +28,10 @@ CREATE TABLE IF NOT EXISTS `sales` (
 
 
 
-CREATE TABLE IF NOT EXISTS 'employee' (
-    'id' int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS 'user' (
+    'id' int(6) NOT NULL AUTO_INCREMENT,
     'name' varchar(255) NOT NULL,
+    'username' varchar(30) NOT NULL,
     'admin' boolean NOT NULL,
     'email' varchar(255) NOT NULL,
     'password' varchar(255) NOT NULL,
