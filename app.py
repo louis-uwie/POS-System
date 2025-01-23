@@ -8,8 +8,8 @@ from database.db import get_connection
 """
 Initializing Application
 
+This is the basic Flask startup method for the web-app to run.
 """
-
 app = Flask(__name__)
 
 app.config['SESSION_TYPE'] = 'filesystem'
@@ -17,8 +17,9 @@ app.config['SESSION_PERMANENT'] = False
 Session(app)
 
 
+
 """
-App Routing 
+APP ROUTING
 
 The following routes are defined:
 - /         :   This is the default non-logged in user. From here, 
@@ -32,8 +33,11 @@ The following routes are defined:
 - /login    :   This is the login page. Pre-defined users only. No registration.
                 Only ADMINS have access to adding new users to the system. 
 
-"""
+- /main     :   This is the landing page for employees. This is where the main directory will be displayed
+                In main, the employee is able to go through different features of the application.
+                It could be sales, viewing sales history, check product prices, and other basic applications of a POS-System
 
+"""
 @app.route('/')
 def index():
 
