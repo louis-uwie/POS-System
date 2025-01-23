@@ -1,13 +1,6 @@
-CREATE TABLE IF NOT EXISTS 'user' (
-    'id' int(6) NOT NULL AUTO_INCREMENT,
-    'email' varchar(255) NOT NULL,
-    'fname' varchar(100) NOT NULL,
-    'lname' varchar(100) NOT NULL,
-    'password' varchar(255) NOT NULL,
-
-    'admin' boolean NOT NULL,
-    
-    'created_at' timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    'updated_at' timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    PRIMARY KEY ('id')
-)
+INSERT INTO `user` (`email`, `fname`, `lname`, `password`, `admin`)
+VALUES
+('admin@admin.com', 'Admin', 'Admin', 'admin1', 1),
+('admin2@admin.com', 'Admin', 'Admin', 'admin2', 1),
+('john.doe@example.com', 'John', 'Doe', 'password123', 0),
+('jane.doe@example.com', 'Jane', 'Doe', 'password456', 0);
