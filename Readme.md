@@ -64,4 +64,3 @@ Visit `http://localhost:5000` in your browser.
 
 ## License
 QuickPOS is open-source software licensed under the MIT license.
-
